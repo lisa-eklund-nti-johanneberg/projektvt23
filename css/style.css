@@ -1,1 +1,7 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    font-size: 30px;
+    display: grid;
+    width: 90%;
+    
+
+}
