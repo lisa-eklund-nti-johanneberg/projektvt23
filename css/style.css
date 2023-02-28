@@ -2,6 +2,12 @@
     font-size: 30px;
     display: grid;
     width: 90%;
-    
-
+    height:90vh;
+    background-color: gold;
+    margin:auto;
+    grid-template-areas: "l1 l1 l1"
+                        "hd hd hd"
+                        "l2 l2 l2"
+                        "s1 s1 s1"
+                        "ft ft ft"
 }
