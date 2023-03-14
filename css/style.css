@@ -1,13 +1,42 @@
 #wrapper {
     font-size: 30px;
     display: grid;
-    width: 90%;
-    height:90vh;
-    background-color: gold;
+    width: 95%;
+    background-color: rgb(213, 154, 186);
     margin:auto;
     grid-template-areas: "l1 l1 l1"
                         "hd hd hd"
                         "l2 l2 l2"
                         "s1 s1 s1"
                         "ft ft ft"
+}
+
+#linje_1 {
+    grid-area: l1;
+    background-color: rgb(235, 70, 41);
+    height: 5vh;
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(240, 205, 66);
+    height: 33vh;
+}
+
+#linje_2 {
+    grid-area: l2;
+    background-color: rgb(235, 70, 41);
+    height: 5vh;
+}
+
+#section_1 {
+    grid-area: s1;
+    background-color: cornsilk;
+    height: 70vh;
+}
+
+footer {
+    grid-area: ft;
+    background-color: floralwhite;
+    height: 15vh;
 }
