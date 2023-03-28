@@ -2,37 +2,41 @@
     font-size: 30px;
     display: grid;
     width: 95%;
-    background-color: rgb(213, 154, 186);
+    background-color: rgb(242, 85, 48);
     margin:auto;
-    grid-template-areas: "l1 l1 l1"
-                        "hd hd hd"
-                        "l2 l2 l2"
-                        "s1 s1 s1"
-                        "ft ft ft"
-}
-
-#linje_1 {
-    grid-area: l1;
-    background-color: rgb(235, 70, 41);
-    height: 5vh;
+    grid-template-areas:
+                        "hd hd hd hd hd"
+                        "s2 s1 s1 s1 s3"
+                        "ft ft ft ft ft"
 }
 
 header {
     grid-area: hd;
     background-color: rgb(240, 205, 66);
-    height: 33vh;
+    height: 40vh;
+    background-image: url("../img/header.jpg")
 }
 
-#linje_2 {
-    grid-area: l2;
-    background-color: rgb(235, 70, 41);
-    height: 5vh;
+#sidan {
+    grid-area: s2;
+    background-color:rgb(243, 230, 154);
+    margin: 0%;
+}
+
+#section_3 {
+    grid-area: s3;
+    background-color:rgb(243, 230, 154);
+    margin: 0%;
 }
 
 #section_1 {
     grid-area: s1;
     background-color: cornsilk;
     height: 70vh;
+    font-size:medium;
+    text-align: center;
+    
+    
 }
 
 footer {
