@@ -1,46 +1,61 @@
 #wrapper {
-    font-size: 30px;
     display: grid;
-    width: 95%;
+    width: 93%;
     background-color: rgb(242, 85, 48);
     margin:auto;
     grid-template-areas:
-                        "hd hd hd hd hd"
-                        "s2 s1 s1 s1 s3"
-                        "ft ft ft ft ft"
+                        "hd hd hd"
+                        "s2 s1 dv"
+                        "bn bn bn"
+                        "ft ft ft";
+    grid-template-columns: 15% 63% 24%;
+    grid-template-rows: 44vh 70vh 7vh 20vh ;
 }
 
 header {
     grid-area: hd;
     background-color: rgb(240, 205, 66);
-    height: 40vh;
-    background-image: url("../img/header.jpg")
+    background-image: url("../img/header.jpg");
+    
 }
 
 #sidan {
     grid-area: s2;
     background-color:rgb(243, 230, 154);
-    margin: 0%;
+   
 }
 
-#section_3 {
-    grid-area: s3;
-    background-color:rgb(243, 230, 154);
-    margin: 0%;
+#banner{
+    grid-area: bn;
+    background-color: #ffe246;
+    background-image: url("../img/gul\ gradient.jpg");
+    text-align: center;
+    font-size:x-large;
+   
+}
+
+div{
+    grid-area: dv;
+    background-color: #ffe246;     
+}
+
+#saul_thinkin{ 
+    border: 10px;
+    border-color: #ffe246;
+    border-style: solid;
+   object-fit: cover;
+   width:92%;
+   height: 95%;
 }
 
 #section_1 {
     grid-area: s1;
-    background-color: cornsilk;
-    height: 70vh;
+    background-color: #ffe246;
     font-size:medium;
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 
 footer {
     grid-area: ft;
-    background-color: floralwhite;
-    height: 15vh;
+    background-color: rgb(176, 151, 102);
 }
