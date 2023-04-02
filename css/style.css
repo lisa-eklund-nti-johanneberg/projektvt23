@@ -8,14 +8,16 @@
                         "nv s1 dv"
                         "bn bn bn"
                         "ft ft ft";
-    grid-template-columns: 15% 63% 24%;
-    grid-template-rows: 41vh 70vh 7vh 20vh ;
+    grid-template-columns: 15% 62% 23%;
+    grid-template-rows: 39.5vh 70vh 7vh 20vh ;
 }
 
-header {
+#header_1 {
     grid-area: hd;
     background-color: rgb(240, 205, 66);
     background-image: url("../img/header.jpg");
+    width: 100%;
+    height: auto;
 }
 
 #sidan {
@@ -41,14 +43,25 @@ header {
 
   #nav li:hover {
     background-color: #e6c403;
+    width:fit-content;
 }
 
 #nav a {
     color: rgb(242, 85, 48);
-    font-size:x-large;
+    font-size: 4vh;
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*
+#home {
+    border: 0.5vh;
+    border-radius: 1vh;
+    background-color: #ffec7f;
+    border-color: #e6c403;
+    border-style: solid;
+}
+*/
+
 
 #nav a:hover {
     color: rgb(255, 255, 255);
@@ -89,19 +102,98 @@ header {
 #section_1 {
     grid-area: s1;
     background-color: #ffe246;
-    font-size:larger;
+    font-size:2.8vh;
     text-align: center;  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
-footer {
+#footer_1 {
     grid-area: ft;
     background-color: ffe246;
     background-image: url("../img/cloudysky.jpg");
 }
+
 #footertext {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     text-align: center;
     margin-top: 5vh;
+}
+
+
+
+
+
+#wrapper_2 {
+
+    display: grid;
+    width: 93%;
+    background-color: #ffe246;
+    margin:auto;
+    grid-template-areas:
+                        "hd2 hd2 hd2"
+                        "nv ct ct"
+                        "ft2 ft2 ft2";
+    grid-template-columns: 15% 62% 23%;
+    grid-template-rows: 39.5vh 80vh 10vh ;
+}
+
+#header_2 {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    grid-area: hd2;
+    background-color: #ffe246;
+    border-top: 5.5vh;
+    border-bottom: 5.5vh;
+    border-color: rgb(242, 85, 48);
+    border-style: solid;
+}
+
+#faqtitle {
+    color: #fff;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 15vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 0.4vh;
+    -webkit-text-stroke-color: rgb(242, 85, 48);
+}
+
+.content {
+    grid-area: ct;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .text-section {
+    flex-basis: 45%;
+    object-fit: contain;
+    background-color: #fee765;
+    border: 2px solid #e6c403;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #fråga {
+    font-size: 4vh;
+  margin-bottom: 10px;
+  }
+
+  #svar {
+    font-size: 2.8vh;
+  }
+
+  #footer_2 {
+    grid-area: ft2;
+  }
+
+#saul_footer{ 
+   object-fit:contain;
+   grid-area: ft2;
+   max-width: 800%;
+  height: auto;
 }
