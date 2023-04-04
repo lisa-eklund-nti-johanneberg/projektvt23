@@ -20,3 +20,43 @@ const navSlide = () => {
   
   navSlide();
   
+
+
+  const cardsContainer = document.querySelector('.card-container');
+
+const cardsData = [
+  {
+    front: 'Card 1 Front',
+    back: 'Card 1 Back',
+  },
+  {
+    front: 'Card 2 Front',
+    back: 'Card 2 Back',
+  },
+  {
+    front: 'Card 3 Front',
+    back: 'Card 3 Back',
+  },
+  {
+    front: 'Card 4 Front',
+    back: 'Card 4 Back',
+  },
+  {
+    front: 'Card 5 Front',
+    back: 'Card 5 Back',
+  },
+  {
+    front: 'Card 6 Front',
+    back: 'Card 6 Back',
+  },
+  {
+    front: 'Card 7 Front',
+    back: 'Card 7 Back',
+  },
+  {
+    front: 'Card 8 Front',
+    back: 'Card 8 Back',
+  },
+];
+
+

@@ -1,7 +1,6 @@
 #wrapper {
     display: grid;
     width: 93%;
-    background-color: rgb(242, 85, 48);
     margin:auto;
     grid-template-areas:
                         "hd hd hd"
@@ -16,8 +15,10 @@
     grid-area: hd;
     background-color: rgb(240, 205, 66);
     background-image: url("../img/header.jpg");
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    background-size: cover;
+    background-position: center;
 }
 
 #sidan {
@@ -52,15 +53,6 @@
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/*
-#home {
-    border: 0.5vh;
-    border-radius: 1vh;
-    background-color: #ffec7f;
-    border-color: #e6c403;
-    border-style: solid;
-}
-*/
 
 
 #nav a:hover {
@@ -143,7 +135,7 @@
     text-align: center;
     padding: 20px;
     grid-area: hd2;
-    background-color: #ffe246;
+    background-image: url(../img/gradient.jpg);
     border-top: 5.5vh;
     border-bottom: 5.5vh;
     border-color: rgb(242, 85, 48);
@@ -153,8 +145,8 @@
 #faqtitle {
     color: #fff;
     text-align: center;
-    margin-top: 3vh;
-    font-size: 15vh;
+    margin-top: 2vh;
+    font-size: 17vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-text-stroke-width: 0.4vh;
     -webkit-text-stroke-color: rgb(242, 85, 48);
@@ -172,7 +164,8 @@
     flex-basis: 45%;
     object-fit: contain;
     background-color: #fee765;
-    border: 2px solid #e6c403;
+    border: 2px solid #97adce;
+    border-radius: 3vh;
     margin-bottom: 20px;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -196,4 +189,169 @@
    grid-area: ft2;
    max-width: 800%;
   height: auto;
+}
+
+
+
+
+#wrapper_4 {
+
+    display: grid;
+    width: 93%;
+    background-color: #ffe246;
+    margin:auto;
+    grid-template-areas:
+                        "hd4 hd4 hd4"
+                        "nv s4 s4"
+                        "ft4 ft4 ft4";
+    grid-template-columns: 15% 62% 23%;
+    grid-template-rows: 39.5vh 100vh 20vh;
+
+}
+
+
+
+#header_4 {
+    grid-area: hd4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-image: url(../img/gradient.jpg);
+    border-top: 5.5vh;
+    border-bottom: 5.5vh;
+    border-color: rgb(242, 85, 48);
+    border-style: solid;
+}
+
+#fctitle {
+    color: #fff;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 17vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 0.4vh;
+    -webkit-text-stroke-color: rgb(242, 85, 48);
+}
+
+#section4 {
+    grid-area: s4;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 32vh;
+    height: 37vh;
+    margin: 2.5vh;
+    perspective: 1000px;
+    transition: transform 0.6s;
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card-front {
+    background-color: #f2f2f2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 4vh;
+  }
+
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2vh;
+    border: 0.8vh;
+    border-color: #e6c403;
+    border-style: solid;
+  }
+  
+  .card-back {
+    background-color: #666;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 2vh;
+  }
+
+  
+  #footer_4 {
+    grid-area: ft4;
+    background-color: ffe246;
+    background-image: url("../img/cloudysky.jpg");
+  }
+
+
+
+  
+  #wrapper_3 {
+    display: grid;
+    width: 93%;
+    background-color: #ffe246;
+    margin:auto;
+    grid-template-areas:
+                        "hd3 hd3 hd3"
+                        "nv s3 s3"
+                        "ft3 ft3 ft3";
+    grid-template-columns: 15% 62% 23%;
+    grid-template-rows: 39.5vh 100vh 20vh;
+  }
+
+  #header_3 {
+    grid-area: hd3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-image: url(../img/gradient.jpg);
+    border-top: 5.5vh;
+    border-bottom: 5.5vh;
+    border-color: rgb(242, 85, 48);
+    border-style: solid;
+  }
+
+  #svtitle {
+    color: #fff;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 17vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 0.4vh;
+    -webkit-text-stroke-color: rgb(242, 85, 48);
+}
+
+#footer_3 {
+    grid-area: ft3;
+    background-color: ffe246;
+    background-image: url("../img/cloudysky.jpg");
+}
+
+#section_3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3vh;
+    font-size: 2.8vh;
+}
+
+.st {
+    font-size: 3.5vh;
 }
